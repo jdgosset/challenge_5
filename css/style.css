@@ -1,7 +1,12 @@
+/* ------------------------general -------------------------------*/
 body div.container-fluid {
     padding: 0px;
 }
-
+em {
+  color: white;
+  font-weight: bold;
+}
+/* -------------------------navbar-------------------------------- */
 .jdh-button-container {
     display: flex;
 }
@@ -44,6 +49,18 @@ body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li {
     border-top: 1px solid grey;
 }
 
+nav.navbar.navbar-expand-lg.navbar-light {
+  justify-content: flex-end;
+  position: relative;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light h1 {
+  position: absolute;
+  left: 0px;
+  top: -8px;
+}
+
+/* -----------------------------articles--------------------------------- */
 div.jdh-tags {
     padding: 2rem 0.5rem;
     background-color: black;
@@ -67,23 +84,126 @@ body div.container-fluid div.row.no-gutters section.footer {
     background-color: black;
     padding: 0 1rem ;
 }
-
-nav.navbar.navbar-expand-lg.navbar-light {
-    justify-content: flex-end;
-    position: relative;
-    /* justify-content: space-between; */
+/* ----------------------------------content------------------------------- */
+section.content {
+  padding: 3rem 0;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light h1 {
-    position: absolute;
-    left: 0px;
-    top: -8px;
+section.content a{
+  color:green;
 }
+section.content a:hover{
+  text-decoration: none;
+}
+
+section.content h4{
+  padding: 1rem 0;
+  border-top: 5px solid black;
+}
+
+section.content div.content-description h2{
+color: grey;
+}
+
+section.content ul {
+  padding: 0;
+  list-style: none;
+}
+
+section.content li {
+  border-top: 1px solid lightgrey;
+}
+
+section.content li:last-child {
+  display: none;
+}
+
+section.content li:first-child {
+  border-top: 0px solid lightgrey;
+}
+
+/* ----------------------------------aside--------------------------------- */
+aside div.aside-div {
+  padding-bottom: 3rem;
+}
+aside div.aside-div h4 {
+  padding-bottom: 2rem;
+}
+h3.twenty-fourteen {
+  display:block;
+  color: lightgrey;
+  font-size: 0.7rem;
+}
+ul.second-nav a {
+  color: white;
+}
+
+ul.second-nav {
+  list-style: none;
+  padding: 0px;
+}
+
+ul.second-nav li {
+  border-top: 1px solid grey;
+  vertical-align: middle;
+  padding: 0.5rem 2rem;
+}
+
+ul.second-nav a:hover {
+  text-decoration: none;
+}
+
+ul.second-nav li:hover {
+  background-color: green;
+}
+.p-tags {
+  color:white;
+  font-weight: bold;
+
+}
+#search {
+  margin: 2rem 0;
+  max-width: 100%;
+  background-color: rgb(50 50 50);
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  color:rgb(150 150 150);
+}
+
+ul.troisieme-nav {
+  padding: 0;
+}
+
+.troisieme-nav li {
+  color: white;
+  list-style: none;
+}
+
+section.footer p {
+  color: lightgrey;
+}
+
+section.footer h3 {
+  font-size: 0.8rem;
+  color: lightgrey;
+}
+
+
+/* -------------------------------footer------------------------------------- */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+/* ---------------------------------media queries---------------------------- */
 
 @media screen and (min-width: 768px) {
     div.jdh-article {
-        max-height: 500px;
-        min-height: 500px;
     }
     div.jdh-tags {
         height: 188px;
@@ -94,6 +214,9 @@ nav.navbar.navbar-expand-lg.navbar-light h1 {
     body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li {
         border-top: 0px;
     }
+    h3.twenty-fourteen {
+      display:none;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -101,44 +224,32 @@ nav.navbar.navbar-expand-lg.navbar-light h1 {
         display: inline-block;
         max-width: 490px;
     }
-}
+    h3.twenty-fourteen {
+      display:block;
+    }
+    ul.second-nav li {
+        margin: 0 -1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    section.content div.content-description {
+      padding: 0 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    section.content div.content-description h2{
+    font-size: 2.5rem;
+    }
+    section.content li:last-child {
+      display: inline-block;
+    }
+    section.content li {
+      border-top: 1px solid lightgrey;
+    }
+    .footer {
+      max-width: 220px;
+    }
 
-ul.second-nav a {
-    color: white;
-}
-
-ul.second-nav {
-    list-style: none;
-    padding: 0px;
-}
-
-ul.second-nav li {
-    border-top: 1px solid grey;
-    vertical-align: middle;
-    padding: 0.5rem 2rem;
-}
-
-ul.second-nav a:hover {
-    text-decoration: none;
-}
-
-ul.second-nav li:hover {
-    background-color: green;
-}
-.p-tags {
-    color:white;
-    font-weight: bold;
-
-}
-
-#search {
-    margin: 2rem 0;
-}
-em {
-    color: white;
-    font-weight: bold;
-}
-.troisieme-nav li {
-    color: white;
-    list-style: none;
 }
