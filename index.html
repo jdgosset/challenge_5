@@ -10,52 +10,62 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>challenge_5</title>
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand text-light" href="google.com">Progeny MMXIV</a>
+      <div class="jdh-button-container">
+        <button type="button" class="btn btn-success jdh-button search">
+          <i class ="fas fa-search"></i>
+        </button>
+        <button class="navbar-toggler jdh-button navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class ="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">MUSIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">GIGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">PHOTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="google.com">d</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <div class="container-fluid">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="google.com">Progeny MMXIV</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="google.com">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com">MUSIC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com">GIGS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com">PHOTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="google.com">VIDEOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="google.com"></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
       <main>
         <div class="row">
-          <div class="col-sm-12">
-            <img src="images/nowell-featured-image-1038x576.jpg" alt="">
-          </div>
+
+            <img class="img-fluid" src="images/nowell-featured-image-1038x576.jpg" alt="">
+
           <div>
             <p class="tags">blog</p>
             <h2>NOWEL WORDPRESS AUDIOTHEME FEATURES OVERWIEW</h2>
@@ -63,9 +73,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-12">
-            <img src="images/rodney-hayden-atascosa-sand.jpg" alt="">
-          </div>
+            <img class="img-fluid" src="images/rodney-hayden-atascosa-sand.jpg" alt="">
 
           <div>
             <p class="tags">records</p>
@@ -74,9 +82,9 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-12">
-            <img src="images/322267385_640.jpg" alt="">
-          </div>
+
+            <img class="img-fluid" src="images/322267385_640.jpg" alt="">
+
 
           <div>
             <p class="tags">videos</p>
@@ -106,7 +114,7 @@
             </ul>
             <h4><i class="fas fa-play"></i>FEATURED VIDEOS</h4>
             <figure>
-              <img src="images/audiotheme-overview-video-thumbnail.jpg" alt="img_video">
+              <img class="img-fluid" src="images/audiotheme-overview-video-thumbnail.jpg" alt="img_video">
               <figcaption>
                 Lorem ipsum dolor sit amet, <a href="google.com">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </figcaption>
@@ -134,7 +142,7 @@
       <section>
         <p class="tags">RECENT RELEASE</p>
         <figure>
-          <img src="images/wide-listener-1024x1024.jpg" alt="">
+          <img class="img-fluid" src="images/wide-listener-1024x1024.jpg" alt="">
           <figcaption>
             Released 9.10.13<br />
             <em>listen Now</em>

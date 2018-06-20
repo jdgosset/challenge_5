@@ -1,0 +1,45 @@
+body div.container-fluid {
+  /* padding: 0px; */
+}
+
+.jdh-button-container {
+  display: flex;
+
+}
+
+body header nav button.jdh-button {
+  border-radius: 0px;
+  border-width: 2px;
+}
+
+body header nav a.navbar-brand{
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+body header nav button.jdh-button.navbar{
+  border-radius: 0px;
+  border-width: 0px;
+  color: white;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  background-color: black;
+  padding: 0px;
+}
+
+body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto {
+  padding: 0 0.5rem;
+}
+
+body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li a{
+  color: white;
+}
+
+body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li:last-child a{
+  color: black;
+}
+
+body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li{
+  border-top: 1px solid grey;
+}
