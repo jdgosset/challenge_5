@@ -1,11 +1,10 @@
 body div.container-fluid {
-  /* padding: 0px; */
+  padding: 0px;
 }
+
 
 .jdh-button-container {
   display: flex;
-
-
 }
 
 body header nav button.jdh-button {
@@ -31,7 +30,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
 
 body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto {
   padding: 0 0.5rem;
-  align-self: end;
+  /* align-self: end; */
 }
 
 body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li a{
@@ -47,8 +46,58 @@ body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li{
 }
 
 div.jdh-tags{
-    d
-    padding:2rem 0.5rem;
+    padding: 2rem 0.5rem;
     background-color: black;
     color:white;
+}
+div.jdh-tags p{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+div.jdh-tags h2{
+  color: lightgrey;
+}
+
+img.jdh-img {
+  width: 100%;
+}
+
+section.second-nav {
+  background-color: black;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  justify-content: flex-end;
+  position: relative;
+  /* justify-content: space-between; */
+}
+nav.navbar.navbar-expand-lg.navbar-light h1{
+  position: absolute;
+  left: 0px;
+  top: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  div.jdh-article {
+    max-height: 500px;
+    min-height: 500px;
+  }
+  div.jdh-tags {
+    height: 188px;
+  }
+  img.jdh-img {
+    overflow: hidden;
+  }
+  body header nav div.collapse.navbar-collapse ul.navbar-nav.mr-auto li{
+    border-top: 0px;
+  }
+
+
+}
+
+@media screen and (min-width: 992px) {
+  div.collapse.navbar-collapse#navbarSupportedContent {
+    display: inline-block;
+    max-width: 490px;
+  }
 }
